@@ -1,0 +1,36 @@
+@import "../../scss/index";
+
+.layout {
+  background: #040404;
+  min-height: 100%;
+  z-index: 1;
+  &__sidebar {
+    margin-left: 342px;
+    background-color: transparent;
+    overflow: hidden;
+    height: 90vh;
+    margin: auto 0 auto 0;
+  }
+  &__sidebar:hover {
+    font-family: $font_first;
+    font-size: 36px;
+    font-weight: normal;
+    flex: 0 0 312px !important;
+    max-width: 312px !important;
+    min-width: 312px !important;
+    width: 312px !important;
+    overflow: hidden !important;
+    transition: 1.5s ease;
+
+    .menu__text {
+      display: flex;
+      flex: 0 0 auto;
+    }
+    .menu__user {
+      visibility: visible;
+    }
+    .menu__setting {
+      display: block;
+    }
+  }
+}

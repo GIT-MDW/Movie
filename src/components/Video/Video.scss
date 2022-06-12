@@ -1,0 +1,14 @@
+.video-wrapper {
+  position: fixed;
+  height: 90%;
+  width: 100%;
+  z-index: -99965465465;
+}
+
+video {
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}

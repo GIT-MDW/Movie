@@ -1,0 +1,13 @@
+@import "../../scss//index";
+
+.trendingMovies {
+  &__title {
+    font-family: $font_first;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__film-img {
+    cursor: pointer;
+  }
+}

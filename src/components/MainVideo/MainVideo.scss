@@ -1,0 +1,65 @@
+@import "../../scss//index";
+
+.MainVideo {
+  font-family: $font_first;
+  margin-bottom: 80px;
+  &__info {
+    margin-top: 171px;
+    padding-left: 20px;
+    width: 802px;
+  }
+
+  &__genre {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  &__data-duration {
+    display: flex;
+    gap: 16px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #f1f1f1;
+  }
+  &__btns {
+    display: flex;
+    gap: 18px;
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+
+    &__play,
+    &__more-info {
+      padding: 12px 40px;
+      border-radius: 40px;
+    }
+    &__more-info {
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: -0.32px;
+      color: #f1f1f1;
+      background: linear-gradient(159.08deg, #2727f5 -26.13%, #001671 140.45%);
+    }
+    &__play {
+      font-family: "Tajawal";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 30px;
+      letter-spacing: -0.32px;
+      color: #0c0c0c;
+    }
+  }
+}

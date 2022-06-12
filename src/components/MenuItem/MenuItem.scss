@@ -1,0 +1,79 @@
+@import "../../scss/index";
+
+.wrapper {
+  width: 270px;
+}
+.menu {
+  font-family: $font_first;
+  z-index: 0;
+  font-size: 20px;
+  list-style-type: none;
+  position: relative;
+  &__user {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: -0.32px;
+    margin-bottom: 44px;
+    &-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    &-name {
+      font-size: 32px;
+    }
+  }
+  &__items {
+    width: 312px;
+    &-group {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      height: 72px;
+      width: 270px;
+      justify-content: space-between;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    &_active {
+      font-weight: bold;
+      background-color: #3b486d;
+    }
+  }
+
+  &__text {
+    display: none;
+    width: 200px;
+    word-wrap: normal;
+  }
+
+  .ico {
+    width: 25px;
+    height: 29px;
+  }
+
+  &__setting {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    color: #858688;
+    display: none;
+    padding-left: 25px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    &-item {
+      font-family: $font_first;
+      font-size: 20px;
+      font-weight: bold;
+      color: #858688;
+    }
+  }
+}
