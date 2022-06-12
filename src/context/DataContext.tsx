@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 import data from "../data/data.json";
-import { IContext, IInitialState } from "../ts/global";
+import { IContext } from "../ts/global";
 import reducer, { initialState } from "./reducer";
 
 const DataContext = createContext<IContext>({ state: initialState, dispatch: () => {} });

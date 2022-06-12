@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { selectFilm } from "../../context/actions";
 import { DataContext } from "../../context/DataContext";
 import { IContext, ITendingNow } from "../../ts/global";
+import { sortFn } from "../../utils/utils";
 import "./TrendingMovies.scss";
 const b = block("trendingMovies");
 
@@ -18,6 +19,11 @@ export const TrendingMovies = () => {
   useEffect(() => {
     setData(TendingNow);
   }, []);
+
+  useEffect(() => {
+    const id = sessionStorage.getItem("movieID");
+    sortFn(TendingNow, id!);
+  }, [window.performance, TendingNow]);
 
   return (
     <div className={b()}>
